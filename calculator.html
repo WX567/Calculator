@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://myfonts.ru/myfonts?fonts=digital-numbers" rel="stylesheet" type="text/css" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="back-Calculator">
+        <!-- div - это базовый html-контейнер, который может содержать в себе другие html-элементы. -->
+
+        <!-- блок с экраном калькулятора, где будет выводиться результат вычислений. -->
+        <div class="df">
+            <div id="result" class="result font-num">
+                0
+            </div>
+            <div>
+                <select name="Список" class="selectmatch">
+                    <option value="">Функции</option>
+                    <option value="">Log</option>
+                    <option value="">X²</option>
+                    <option value="">√</option>
+                    <option value="">sin</option>
+                    <option value="">cos</option>
+                    <option value="">tan</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- блок с кнопками калькулятора. -->
+        <div>
+            <!--горизонтальный ряд из четырех кнопок-->
+            <div>
+                <button id="btn_op_clear" class="my-btn secondary">C</button>
+                <!-- про тэг кнопки: https://www.w3schools.com/tags/tag_button.asp -->
+                <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+                <button id="btn_op_percent" class="my-btn secondary">%</button>
+                <button id="btn_op_div" class="my-btn primary">/</button>
+            </div>
+
+            <div>
+                <button id="btn_digit_7" class="my-btn"><p class="font-num">7</p></button>
+                <button id="btn_digit_8" class="my-btn"><p class="font-num">8</p></button>
+                <button id="btn_digit_9" class="my-btn"><p class="font-num">9</p></button>
+                <button id="btn_op_mult" class="my-btn primary">x</button>
+            </div>
+
+            <div>
+                <button id="btn_digit_4" class="my-btn"><p class="font-num">4</p></button>
+                <button id="btn_digit_5" class="my-btn"><p class="font-num">5</p></button>
+                <button id="btn_digit_6" class="my-btn"><p class="font-num">6</p></button>
+                <button id="btn_op_minus" class="my-btn primary">-</button>
+            </div>
+
+            <div>
+                <button id="btn_digit_1" class="my-btn"><p class="font-num">1</p></button>
+                <button id="btn_digit_2" class="my-btn"><p class="font-num">2</p></button>
+                <button id="btn_digit_3" class="my-btn"><p class="font-num">3</p></button>
+                <button id="btn_op_plus" class="my-btn primary">+</button>
+            </div>
+
+            <div>
+                <button id="btn_digit_0" class="my-btn"><p class="font-num">0</p></button>
+                <button id="btn_digit_dot" class="my-btn">.</button>
+                <button id="btn_op_equal" class="my-btn primary execute">=</button>
+            </div>
+        </div>
+    </div>
+    <p style="margin: 20px auto 0; color: white; font-size: 32px; width: 400px;">ЛР выполнен Кулемеев И.Н</p>
+
+</body>
+
+</html>
